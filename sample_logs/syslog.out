@@ -1,0 +1,4 @@
+Sep 15 12:45:23 ubuntu sshd[4567]: Failed password for user root from 192.168.1.100 port 51234
+Sep 15 12:45:25 ubuntu sshd[4567]: Connection closed by 192.168.1.100 port 51234
+Sep 15 13:00:00 ubuntu CRON[1234]: (root) CMD (apt update)
+Sep 15 13:05:00 ubuntu kernel: [12345.67] USB device connected
