@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "log_analyzer"
+version = "0.1.0"
+description = "Linux log elemző CLI alkalmazás szakdolgozathoz"
+authors = [
+  { name="Saját Neved", email="email@pelda.hu" },
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "click",
+    "rich",
+]
+
+# EZ A LÉNYEG!
+# Ez mondja meg, hogy a 'logtool' parancs a terminálban
+# a src/log_analyzer/cli.py fájlban lévő 'main' függvényt indítsa el.
+[project.scripts]
+logtool = "log_analyzer.cli:main"

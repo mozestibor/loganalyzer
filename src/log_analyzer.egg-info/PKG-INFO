@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: log_analyzer
+Version: 0.1.0
+Summary: Linux log elemző CLI alkalmazás szakdolgozathoz
+Author-email: Saját Neved <email@pelda.hu>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: rich

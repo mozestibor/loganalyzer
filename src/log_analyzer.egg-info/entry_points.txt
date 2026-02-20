@@ -1,0 +1,2 @@
+[console_scripts]
+logtool = log_analyzer.cli:main
