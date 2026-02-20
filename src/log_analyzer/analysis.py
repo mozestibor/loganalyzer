@@ -6,13 +6,13 @@ console = Console()
 def show_statistics(entries):
     console.rule("Statisztikák")
 
-    # Itt is: e.service_name a dict lookup helyett
-    process_counts = Counter(e.service_name for e in entries)
+    counted_messages = [e.service_name + ": " + e.message for e in entries]
+    process_counts = Counter(counted_messages)
     
     console.print("[bold]A 10 leggyakoribb hibaüzenet:[/bold]")
     total_count = 0
-    for proc, count in process_counts.most_common(10):
-        console.print(f"{proc} : {count}")
+    for msg, count in process_counts.most_common(10):
+        console.print(f"{msg} -> {count}")
         total_count += count
 
     console.print(f"\n[bold]TOP 10 bejegyzés száma:[/] {total_count}")
@@ -35,11 +35,13 @@ def show_statistics(entries):
 
     #időbeli eloszlás
     console.print("\n[bold]Események időbeli eloszlása (óra szerint):[/bold]")
-    time_buckets = Counter(e.timestamp.strftime('%Y-%m-%d %H:00') for e in entries)
+    time_buckets = Counter((e.timestamp.strftime('%Y-%m-%d'), e.timestamp.hour) for e in entries)
 
-    for time, count in time_buckets.most_common(10):
-        console.print(f"{time} : {count} bejegyzés")
-    
+    for (date_str, hour), count in time_buckets.items():
+        next_hour = (hour + 1) % 24
+        console.print(f"{date_str} {hour:02d}:00 - {next_hour:02d}:00 : {count} bejegyzés")
+
+ 
     console.print(f"\n[bold]Események időbeli eloszlása (nap szerint):[/bold]")
     day_buckets = Counter(e.timestamp.strftime('%Y-%m-%d') for e in entries)
 

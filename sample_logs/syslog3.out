@@ -1,0 +1,11 @@
+2025-11-01T18:20:24.128651+00:00 mozestibor-ThinkPad-T14-Gen-2a systemd-modules-load[408]: Inserted module 'lp'
+2025-11-01T18:20:24.128651+00:00 mozestibor-ThinkPad-T14-Gen-2a systemd-modules-load[408]: Inserted module 'lp'
+2025-11-01T18:20:24.128797+00:00 mozestibor-ThinkPad-T14-Gen-2a systemd-modules-load[408]: Inserted module 'parport_pc'
+2025-11-01T18:20:24.128925+00:00 mozestibor-ThinkPad-T14-Gen-2a kernel:   AMD AuthenticAMD
+2025-11-01T18:20:24.128804+00:00 mozestibor-ThinkPad-T14-Gen-2a systemd-modules-load[408]: Inserted module 'msr'
+2025-11-01T18:20:24.128804+00:00 mozestibor-ThinkPad-T14-Gen-2a systemd-modules-load[408]: Inserted module 'msr'
+2025-11-01T18:20:24.128782+00:00 mozestibor-ThinkPad-T14-Gen-2a systemd-modules-load[408]: Inserted module 'ppdev'
+2025-11-01T18:20:24.128804+00:00 mozestibor-ThinkPad-T14-Gen-2a systemd-modules-load[408]: Inserted module 'msr'
+2025-11-01T23:23:24.128651+00:00 mozestibor-ThinkPad-T14-Gen-2a systemd-modules-load[408]: Inserted module 'lp'
+2025-11-01T23:23:24.128804+00:00 mozestibor-ThinkPad-T14-Gen-2a systemd-modules-load[408]: Inserted module 'msr'
+2025-11-01T23:59:59.999999+00:00 mozestibor-ThinkPad-T14-Gen-2a kernel:   AMD AuthenticAMD
